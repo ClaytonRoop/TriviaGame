@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Triva Game </title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row startGameRow">
+            <div class="col-sm-8 startPanel">
+                <div class = "panel-body startClock">
+                    <button class="btn btn-default startButton">
+                        <h1 class ="startText">Start the Game!</h1>
+                    </button>
+                </div>
+            </div>
+
+
+
+        <div class = "row mainPanelRow">
+            <div class = "col-sm-8 triviaPanel">
+                <div class "panel-body triviaQuestions">
+                    <h3 class = "question1">What NFL team is based out of Baltimore?</h3>
+                        <form class="form">
+                            <label class="radio-inline">
+                                <input type="radio" name="q1" value="correct">Ravens
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="q1" value="wrong">Browns
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="q1" value="wrong">Steelers
+                            </label>
+                        </form>
+                </div>
+
+                <div class "panel-body triviaQuestions">
+                    <h3 class="question1">What number does Joe Flacco wear?</h3>
+                    <form class="form">
+                        <label class="radio-inline">
+                            <input type="radio" name="q2" value="wrong">Seventeen
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="q2" value="correct">Eight
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="q2" value="wrong">Forty
+                        </label>
+                    </form>
+                
+                </div>
+
+                <div class "panel-body triviaQuestions">
+                    <h3 class="question1">How many superbowls have the ravens won?</h3>
+                    <form class="form">
+                        <label class="radio-inline">
+                            <input type="radio" name="q3" value="wrong">None
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="q3" value="correct">Two
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="q3" value="wrong">Four
+                        </label>
+                    </form>
+                
+                </div>
+
+                <div class "panel-body triviaQuestions">
+                    <h3 class="question1">What is the Ravens primary color?</h3>
+                    <form class="form">
+                        <label class="radio-inline">
+                            <input type="radio" name="q4" value="correct">Purple
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="q4" value="wrong">Yellow
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="q4" value="wrong">Maroon
+                        </label>
+                    </form>
+                
+                </div>
+
+                <div class "panel-body triviaQuestions">
+                    <h3 class="question1">What team do the Ravens hate the most?</h3>
+                    <form class="form">
+                        <label class="radio-inline">
+                            <input type="radio" name="q5" value="correct">Steelers
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="q5" value="wrong">Giants
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="q5" value="wrong">Falcons
+                        </label>
+                    </form>
+                
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="row startGameRow">
+            <div class="col-sm-8 startPanel">
+                <div class="panel-body done">
+                    <button class="btn btn-default doneButton">
+                        <h1 class="doneText">Done!</h1>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row scoreRow">
+            <div class="col-sm-8 scorePanel">
+                <div class "panel-body scoreTracker">
+                    <h3 class="tally">All done!</h3>
+                    <h5 class="correct">Correct: </h5>
+                    <h5 class="incorrect">Incorrect: </h5>
+                    <h5 class="unanswered">Unanswered: </h5>
+                </div>
+            </div>
+        </div>
+
+        
+
+       
+
+
+     </div>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Script -->
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+</html>
