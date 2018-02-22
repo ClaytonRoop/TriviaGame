@@ -20,20 +20,34 @@
 <body>
     <div class="container">
 
+        <div class="page-header topHeader">
+            <h1 class = "headerText"> 
+                Trivia Game!
+            </h1>
+        </div>
+
+
         <div class="row startGameRow">
             <div class="col-sm-8 startPanel">
-                <div class = "panel-body startClock">
-                    <button class="btn btn-default startButton">
-                        <h1 class ="startText">Start the Game!</h1>
-                    </button>
-                </div>
+                <!-- <div class="row"> -->
+                    <!-- <div class="col-sm-8"> -->
+                        <div class = "panel-body startClock">
+                            <h1 class="startCopy"> Press the button to begin! </h1>
+                            <button class="btn btn-default startButton">
+                                <h3 class ="startText">Start the Game</h3>
+                            </button>
+                        </div>
+                    <!-- </div> -->
+                <!-- </div> -->
             </div>
+        </div>
 
 
 
         <div class = "row mainPanelRow">
             <div class = "col-sm-8 triviaPanel">
                 <div class "panel-body triviaQuestions">
+                    <h2 class = "ticker">Time Remaining: 30</h2>
                     <h3 class = "question1">What NFL team is based out of Baltimore?</h3>
                         <form class="form">
                             <label class="radio-inline">
@@ -116,7 +130,7 @@
         
 
         <div class="row startGameRow">
-            <div class="col-sm-8 startPanel">
+            <div class="col-sm-8 donePanel">
                 <div class="panel-body done">
                     <button class="btn btn-default doneButton">
                         <h1 class="doneText">Done!</h1>
@@ -128,11 +142,11 @@
 
         <div class="row scoreRow">
             <div class="col-sm-8 scorePanel">
-                <div class "panel-body scoreTracker">
+                <div class = "panel-body scoreTracker">
                     <h3 class="tally">All done!</h3>
-                    <h5 class="correct">Correct: </h5>
-                    <h5 class="incorrect">Incorrect: </h5>
-                    <h5 class="unanswered">Unanswered: </h5>
+                    <h5 class="correct" id="lastScore">Correct: </h5>
+                    <h5 class="incorrect" id="lastScore">Incorrect: </h5>
+                    <h5 class="unanswered" id="lastScore">Unanswered: </h5>
                 </div>
             </div>
         </div>

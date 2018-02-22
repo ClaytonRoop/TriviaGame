@@ -28,6 +28,7 @@ $(".doneButton").on("click", function () {
 });
 
 
+
 //this is grabbing the selected buttons value and giving it a vairable. 
 //this can probably be done at the end when the time is over
 //instead of using the change function everytime it's pressed.
@@ -53,6 +54,7 @@ $(".doneButton").on("click", function () {
 
 function start() {
     intervalId = setInterval(decrement, 1000);
+    $(".startPanel").css("display", "none");
 }
 
 
@@ -62,7 +64,7 @@ function decrement() {
     number--;
 
     //  Show the number in the #show-number tag.
-    $(".startButton").html("<h2> Time Remaining: " + number + "</h2>");
+    $(".ticker").html("<h2> Time Remaining: " + number + "</h2>");
 
     clockRunning = true;
 
@@ -84,6 +86,7 @@ function decrement() {
 
 function stop () {
     clearInterval(intervalId);
+    $(".scorePanel").css("display", "block");
     answer1 = $('input[name=q1]:checked', '.form').val();
     answer2 = $('input[name=q2]:checked', '.form').val();
     answer3 = $('input[name=q3]:checked', '.form').val();
@@ -98,17 +101,17 @@ function stop () {
             console.log([i]);
             correct++;
             console.log(correct);
-            $(".correct").text("Correct: " + correct);
         } else if (answerArray[i] === "wrong") {
             incorrect++
-            console.log(incorrect);
-            $(".incorrect").text("Incorrect: " + incorrect);
+            console.log(incorrect);  
         } else {
             unanswered++
             console.log(unanswered);
-            $(".unanswered").text("Unanswered: " + unanswered);
         }
 
+        $(".correct").text("Correct: " + correct);
+        $(".incorrect").text("Incorrect: " + incorrect);
+        $(".unanswered").text("Unanswered: " + unanswered);
     }
 
     // ifThen() 

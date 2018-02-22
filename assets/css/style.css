@@ -1,0 +1,76 @@
+.startPanel {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 1;
+    cursor: pointer;
+
+}
+
+.startClock {
+    color: black;
+    background-color: white;
+    position: relative;
+    top: 10%;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* .startCopy {
+    width: 80%;
+} */
+
+/* .startButton {
+   width: 33%;
+   left: 33%
+} */
+
+.scorePanel {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 1;
+    cursor: pointer;
+    /* color: white; */
+
+}
+
+.done {
+     text-align: center;
+}
+
+
+/* .tally {
+    background-color: blue;
+} */
+
+.scoreTracker {
+    color: black;
+    background-color: white;
+    position: relative;
+    width: 50%;
+    top: 10%;
+    margin: auto;
+    text-align: center;
+}
+
+.tally {
+    font-size: 36px;
+}
+
+#lastScore {
+    font-size: 24px;
+}
